@@ -1,0 +1,27 @@
+<h1>Chore Assignment</h1>
+
+
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>    </th>
+    <th>Name</th>
+
+  </tr>
+
+<% @chores.each do |chore| %>
+	<!-- Need to find out how to NOT  -->
+	<!-- have the following line displayed. -->
+	<p hidden><%= @choice = Person.find(rand(13..16)) %> </p>
+  <tr>
+    <td bold><%= chore.title %> </td>
+    <td> goes to  . . . </td>
+    <td> <%= @choice.name %> </td>
+  </tr>
+	 
+<% end %>
+
+
+
+</table>
